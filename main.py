@@ -4,7 +4,8 @@ import os
 import re
 from itertools import repeat
 W, H = os.get_terminal_size()
-PADDING_START = ''.join(list(repeat(' ', 10)))
+PADDING_SPACE = 10
+PADDING_START = ''.join(list(repeat(' ', PADDING_SPACE)))
 CODE_BG_START = '\x1b[7;30;47m'
 CODE_GREEN = '\x1b[7;30;42m'
 CODE_PURPLE = '\x1b[7;30;45m'
